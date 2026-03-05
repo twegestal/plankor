@@ -1,0 +1,35 @@
+:root {
+  font-family: 'Fraunces', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.92);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image:
+    url('./assets/plankor-desktop.png'),
+    linear-gradient(180deg, #ff2f7b 0%, #ff7a3c 100%);
+  background-size: cover, 100% 100%;
+  background-position: center top, center top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image:
+      url('./assets/plankor-mobile.png'),
+      linear-gradient(180deg, #ff2f7b 0%, #ff7a3c 100%);
+  }
+}

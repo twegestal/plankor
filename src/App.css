@@ -1,0 +1,196 @@
+#root {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.page {
+  padding: 2rem 1rem;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.28);
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(12px) saturate(1.15);
+  -webkit-backdrop-filter: blur(12px) saturate(1.15);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.cardButton {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.96);
+  padding: 1.05rem 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: left;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.chev {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.cardBody {
+  padding: 0 1.1rem 1.1rem;
+}
+
+.rows {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.voteCard {
+  border-radius: 18px;
+  padding: 0.95rem;
+  display: grid;
+  gap: 0.7rem;
+  background: rgba(0, 0, 0, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.totalVote {
+  background: rgba(120, 255, 205, 0.12);
+  border-color: rgba(120, 255, 205, 0.28);
+}
+
+.voteTop {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.voteName {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.voteTotal {
+  font-weight: 900;
+  opacity: 0.95;
+}
+
+.voteScores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.scorePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.38rem 0.6rem;
+  border-radius: 999px;
+
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.scoreKey {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.scoreVal {
+  font-weight: 900;
+  color: rgba(205, 255, 225, 0.98);
+  text-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.55),
+    0 0 10px rgba(120, 255, 205, 0.25);
+}
+
+.voteComment {
+  opacity: 0.96;
+  line-height: 1.35;
+  word-break: break-word;
+}
+
+.fadeIn {
+  animation: fadeIn 260ms ease-out both;
+}
+
+.cardEnter {
+  animation: cardIn 320ms ease-out both;
+}
+
+.cardEnter:nth-child(1) {
+  animation-delay: 0ms;
+}
+.cardEnter:nth-child(2) {
+  animation-delay: 60ms;
+}
+.cardEnter:nth-child(3) {
+  animation-delay: 120ms;
+}
+.cardEnter:nth-child(4) {
+  animation-delay: 180ms;
+}
+.cardEnter:nth-child(5) {
+  animation-delay: 240ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fadeIn,
+  .cardEnter {
+    animation: none;
+  }
+}
