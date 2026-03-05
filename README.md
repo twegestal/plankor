@@ -9,7 +9,7 @@ Resultaten presenteras i realtid baserat på ett Google Spreadsheet där klubben
 
 1. Medlemmar i Herklubben Herkules fyller i betyg i ett Google Spreadsheet.
 2. Den här sidan hämtar spreadsheetet som CSV.
-3. React-appen parser datan och presenterar resultaten per restaurang.
+3. Appen parser datan och presenterar resultaten per restaurang.
 4. Varje restaurang kan expanderas för att visa individuella betyg.
 
 Kategorier som bedöms:
