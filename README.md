@@ -1,4 +1,4 @@
-# Hela Malmö består av plankor som jag testat
+# Halva Malmö består av plankor som jag testat
 
 Herklubben Herkules officiella plankrating i Malmö.
 
